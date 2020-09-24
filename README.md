@@ -31,7 +31,7 @@ Mail Server
           server_name mail.pattysapplab.name; #(C)
 
           # http認證的位址
-          auth_http mail.postfix.tw:80/auth.php; 
+          auth_http mail.postfix.tw:80/auth.php; #(F)
           imap_capabilities IMAP4rev1 ...;
 
           pop3_auth ...;
@@ -136,6 +136,14 @@ Mail Server
     設定後端代理伺服器啟用 TCP keepalive 模式處理郵件伺服器轉發的用戶端連結。
     該指令僅能於虛擬伺服器主機區塊中設定。
 
-    
+(F) auth_http [URL]
 
+    設定代理伺服器提供郵件服務時用於 http 認證的伺服器位址。
+    如上範例為 uth_http mail.postfix.tw:80/auth.php;
+    該指令僅能於虛擬伺服器主機區塊中設定。
+    
+(G) auth_http_header X-Auth-Key "secret-string"
+
+    如 (F) 認證伺服器發出請求時，在請求的標頭增加指定的標頭域。
+    
 
