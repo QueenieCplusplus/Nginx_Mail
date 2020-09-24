@@ -28,7 +28,7 @@ Mail Server
 
       mail{
 
-          server_name mail.pattysapplab.name;
+          server_name mail.pattysapplab.name; #(C)
 
           # http認證的位址
           auth_http mail.postfix.tw:80/auth.php; 
@@ -86,7 +86,7 @@ Mail Server
              $name = $_SERVER["HTTP_AUTH_USER"];
              $pass = $_SERVER["HTTP_AUTH_PASS"];
              $protocol = $_SERVER["HTTP_AUTH_PROTOCOL"];
-             $backend_port = 88;
+             $backend_port = 88;#(B)
 
              if($protocol = "imap"){
                 $backend_port = 143;
@@ -97,7 +97,7 @@ Mail Server
              }
 
              if($username = "kate@mail.pattyappier.name"){
-                $server_ip = "192.168.1.8";
+                $server_ip = "192.168.1.8"; #(A)
              } else {
                  faile();
              }
@@ -112,3 +112,13 @@ Mail Server
             ?>
 
 # 郵件服務的基本指令
+
+(A) 郵件伺服器的 ip 位址
+
+(B) 郵件伺服器的 port 號
+
+(C) 虛擬主機的域名
+    
+    由虛擬伺服器區塊組成。
+
+
