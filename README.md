@@ -131,7 +131,10 @@ Mail Server
     包含 POP3、SMTP、IMAP。
     該指令僅能於虛擬伺服器主機區塊中設定。
     
-(E) 
+(E) so_keepalive
+
+    設定後端代理伺服器啟用 TCP keepalive 模式處理郵件伺服器轉發的用戶端連結。
+    該指令僅能於虛擬伺服器主機區塊中設定。
 
     
 
