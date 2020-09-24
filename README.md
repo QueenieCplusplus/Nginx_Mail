@@ -50,7 +50,7 @@ Mail Server
       server{
 
           listen 143;
-          protocol imap;
+          protocol imap; #(D)
 
 
       }
@@ -115,10 +115,24 @@ Mail Server
 
 (A) 郵件伺服器的 ip 位址
 
-(B) 郵件伺服器的 port 號
+    作用於 OSI L3
+
+(B) 郵件伺服器的服務通訊號
+
+    作用於 OSI L4
+
 
 (C) 虛擬主機的域名
     
     由虛擬伺服器區塊組成。
+    
+(D) 服務協定
+
+    包含 POP3、SMTP、IMAP。
+    該指令僅能於虛擬伺服器主機區塊中設定。
+    
+(E) 
+
+    
 
 
