@@ -8,7 +8,7 @@ Mail Server
           server_name mail.pattysapplab.name;
 
           # http認證的位址
-          auth_http ; 
+          auth_http mail.postfix.tw:80/auth.php; 
           imap_capabilities IMAP4rev1 ...;
 
           pop3_auth ...;
