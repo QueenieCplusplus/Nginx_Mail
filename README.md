@@ -12,13 +12,16 @@ Mail Server
   如 mail.google.com、mail.yahoo.com
   使用者看到的 GUI 畫面都是使用者代理用戶端。
 
-* SMTP
-
-* POP3
-
-* IMAP
+* IMAP(Sync)
 
   使用者下載郵件後，伺服器中的郵件不會被刪除，倘若使用者對郵件進行操作，則會同步狀態至伺服器上，所以伺服器和用戶端本機的郵件狀態保持一制性。
+
+* POP3(Offline)
+
+   使用者下載郵件後，伺服器中的郵件會被刪除，另外此協定為郵件服務的第一個離線 offline 協定。
+   
+* SMTP
+
 
 # Mail Server Instance
 
