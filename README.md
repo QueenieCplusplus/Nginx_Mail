@@ -10,6 +10,7 @@ Mail Server
 * Mailbox, 使用者代理
 
   如 mail.google.com、mail.yahoo.com
+  使用者看到的 GUI 畫面都是使用者代理用戶端。
 
 * Mail Server
 
