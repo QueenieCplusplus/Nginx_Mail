@@ -22,6 +22,7 @@ Mail Server
    
 * SMTP
 
+   使用者需要帳號密碼方才能登入，且此協定能幫助避免受到垃圾郵件侵擾。
 
 # Mail Server Instance
 
