@@ -15,6 +15,8 @@ Mail Server
 
 * POP3
 
+* IMAP
+
 # Mail Server Instance
 
       mail{
