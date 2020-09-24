@@ -7,7 +7,9 @@ Mail Server
 
 此服務有五種軟體套件可以實現其實例，並能支援 ssl 的安全傳輸設定：
 
-* Mailbox
+* Mailbox, 使用者代理
+
+  如 mail.google.com、mail.yahoo.com
 
 * Mail Server
 
